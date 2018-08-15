@@ -9,12 +9,20 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/test", name="home")
+     * @Route("/test", name="homepage")
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-        return $this->render('default/index.html.twig', array(
-            'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
-        ));
+        return $this->render('CoreBundle:default:index.html.twig');
+    }
+
+    /**
+     * @Route("/contact", name="cantact")
+     */
+    public function contactAction(Request $request)
+    {
+        $session = $request->getSession();
+        $session->getFlashBag()->add('info', 'La page de contact n\'est pas encore disponible, merci de revenir plus tard.');
+        return $this->redirectToRoute('core_homepage');
     }
 }

@@ -8,17 +8,11 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-    /**
-     * @Route("/test", name="homepage")
-     */
     public function indexAction()
     {
         return $this->render('CoreBundle:default:index.html.twig');
     }
 
-    /**
-     * @Route("/contact", name="cantact")
-     */
     public function contactAction(Request $request)
     {
         $session = $request->getSession();

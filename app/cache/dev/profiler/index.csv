@@ -1,0 +1,10 @@
+2ecffd,127.0.0.1,GET,http://localhost:8000/platform,1534344732,51c308,200
+51c308,127.0.0.1,GET,http://localhost:8000/platform,1534344732,,500
+e8e40b,127.0.0.1,GET,http://localhost:8000/platform,1534344900,,200
+0638bf,127.0.0.1,GET,http://localhost:8000/platform/advert/1,1534344904,,200
+e0fcb1,127.0.0.1,GET,http://localhost:8000/platform/advert/2,1534344906,,200
+c3a2bb,127.0.0.1,GET,http://localhost:8000/platform/advert/3,1534344909,,200
+f9b5be,127.0.0.1,GET,http://localhost:8000/platform,1534344949,2112c1,200
+2112c1,127.0.0.1,GET,http://localhost:8000/platform,1534344949,,500
+90f632,127.0.0.1,GET,http://localhost:8000/platform,1534344954,29ab99,200
+29ab99,127.0.0.1,GET,http://localhost:8000/platform,1534344954,,500

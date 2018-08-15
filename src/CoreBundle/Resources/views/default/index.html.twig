@@ -10,7 +10,7 @@
     <h2>Homepage</h2>
     <div>
         {% for message in app.session.flashbag.get('info') %}
-            <p><strong>Message flash : {{ message }}</strong></p>
+            <div class="alert alert-danger"><p><strong>Message flash : {{ message }}</strong></p></div>
         {% endfor %}
     </div>
 

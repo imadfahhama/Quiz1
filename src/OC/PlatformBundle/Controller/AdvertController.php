@@ -51,7 +51,17 @@ class AdvertController extends Controller
 
     public function viewAction($id)
     {
-        return new Response("Affichage de l'annonce d'id : " . $id);
+        $advert = array(
+            'title'   => 'Recherche développpeur Symfony',
+            'id'      => $id,
+            'author'  => 'Alexandre',
+            'content' => 'Nous recherchons un développeur Symfony débutant sur Lyon. Blabla…',
+            'date'    => new \Datetime()
+        );
+
+        return $this->render('OCPlatformBundle:Advert:view.html.twig', array(
+            'advert' => $advert
+        ));
     }
 
     public function viewSlugAction($slug, $year, $_format)

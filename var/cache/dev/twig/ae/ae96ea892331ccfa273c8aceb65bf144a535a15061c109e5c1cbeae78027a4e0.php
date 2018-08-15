@@ -62,9 +62,9 @@ class __TwigTemplate_20a882ac90f2a1346280a1f38bcaa2152e96e88de2e15d6820ca0fc428b
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "session", array()), "flashbag", array()), "get", array(0 => "info"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
             // line 13
-            echo "            <p><strong>Message flash : ";
+            echo "            <div class=\"alert alert-danger\"><p><strong>Message flash : ";
             echo twig_escape_filter($this->env, $context["message"], "html", null, true);
-            echo "</strong></p>
+            echo "</strong></p></div>
         ";
         }
         $_parent = $context['_parent'];
@@ -128,7 +128,7 @@ class __TwigTemplate_20a882ac90f2a1346280a1f38bcaa2152e96e88de2e15d6820ca0fc428b
     <h2>Homepage</h2>
     <div>
         {% for message in app.session.flashbag.get('info') %}
-            <p><strong>Message flash : {{ message }}</strong></p>
+            <div class=\"alert alert-danger\"><p><strong>Message flash : {{ message }}</strong></p></div>
         {% endfor %}
     </div>
 

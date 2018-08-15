@@ -37,5 +37,6 @@ return array(
     'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib/Doctrine/Common'),
     'Doctrine\\Bundle\\DoctrineCacheBundle\\' => array($vendorDir . '/doctrine/doctrine-cache-bundle'),
     'Doctrine\\Bundle\\DoctrineBundle\\' => array($vendorDir . '/doctrine/doctrine-bundle'),
+    'CoreBundle\\' => array($baseDir . '/src/CoreBundle'),
     'AppBundle\\' => array($baseDir . '/src/AppBundle'),
 );
